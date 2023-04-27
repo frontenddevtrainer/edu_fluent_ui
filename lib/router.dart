@@ -6,7 +6,9 @@ import "home_screen.dart";
 final GoRouter goRouter = GoRouter(routes: [
   ShellRoute(
       builder: (context, state, child) {
-        return const HomeScreen();
+        return HomeScreen(
+          child: child,
+        );
       },
       routes: [
         GoRoute(
