@@ -7,7 +7,7 @@ final NavigationPane navigationPane = NavigationPane(items: [
     body: SizedBox.shrink(),
     title: Text("Home"),
     onTap: () {
-      goRouter.pushNamed("/");
+      goRouter.pushNamed("home");
     },
   ),
   PaneItem(
@@ -15,7 +15,7 @@ final NavigationPane navigationPane = NavigationPane(items: [
     body: SizedBox.shrink(),
     title: Text("Profile"),
     onTap: () {
-      goRouter.pushNamed("/profile");
+      goRouter.pushNamed("profile");
     },
   ),
   PaneItem(
@@ -23,7 +23,7 @@ final NavigationPane navigationPane = NavigationPane(items: [
     body: SizedBox.shrink(),
     title: Text("Settings"),
     onTap: () {
-      goRouter.pushNamed("/settings");
+      goRouter.pushNamed("settings");
     },
   )
 ]);

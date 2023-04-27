@@ -13,18 +13,21 @@ final GoRouter goRouter = GoRouter(routes: [
       routes: [
         GoRoute(
           path: "/",
+          name: 'home',
           builder: (context, state) {
             return Text("Home");
           },
         ),
         GoRoute(
           path: "/profile",
+          name: "profile",
           builder: (context, state) {
             return Text("Profile");
           },
         ),
         GoRoute(
           path: "/settings",
+          name: "settings",
           builder: (context, state) {
             return Text("Settings");
           },
